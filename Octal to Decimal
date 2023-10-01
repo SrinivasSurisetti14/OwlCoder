@@ -1,0 +1,7 @@
+n=int(input())
+powr=0
+digit=0
+for i in reversed(str(n)):
+    digit+=int(i)*(8**powr)
+    powr+=1
+print(digit)
