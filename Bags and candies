@@ -1,0 +1,10 @@
+n,k,m=map(int,input().split())
+x=k*m
+y=x/n
+z=x//n
+print( math.ceil(n / (k * m)))
+# if y>z:
+    # print(z+1)
+# else:
+    # print(z)
+# print((n + m - 1) // m // k)
