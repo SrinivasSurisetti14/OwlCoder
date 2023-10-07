@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+    int n;
+    cin>>n;
+    int mxm=-1;
+    for(int i=0;i<trunc(log10(n));i++) { 
+        while(n!=0) {
+            int x=n%10;
+            if (mxm<=x) {
+                mxm=x;
+            }
+            n=n/10;
+        }
+    }
+    cout<<mxm;
+}
