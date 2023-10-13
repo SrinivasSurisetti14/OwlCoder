@@ -1,0 +1,7 @@
+n=int(input())
+digits  = [int(i) for i in str(n)] #Making a list of numbers 
+digits.sort(reverse=True)
+if len(digits)<=1 or (len(digits)==2 and digits[0]==0):
+    print(n)
+else:
+    print(int(''.join(map(str,digits))))
