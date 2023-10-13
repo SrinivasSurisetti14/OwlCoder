@@ -1,0 +1,10 @@
+a=int(input())
+b=int(input())
+x=int(input())
+c=1
+if a>=b:
+    print(-1)
+else:
+    while((b*c)-(a*c))<=x:
+        c+=1
+    print(c)
