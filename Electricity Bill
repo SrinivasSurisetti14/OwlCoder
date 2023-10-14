@@ -1,0 +1,25 @@
+n=int(input())
+Surcharge=0
+if n<199:
+    cu=1.20
+    Bill=n*cu
+elif n>=200 and n<400:
+    cu=1.40
+    Bill=n*cu
+elif n>=400 and n<600:
+    cu=1.60
+    Bill=n*cu
+    Surcharge=.15*Bill
+elif n>=600 and n<800:
+    cu=1.80
+    Bill=n*cu
+    Surcharge=.15*Bill
+else:
+    cu=2.00
+    Bill=n*cu
+    Surcharge=.15*Bill
+print("Units Consumed:",n)
+print("Cost per Unit:","{:.2f}".format(cu))
+print("Bill:","{:.2f}".format(Bill))
+print("Surcharge:","{:.2f}".format(Surcharge))
+print("Total Amount:","{:.2f}".format(Surcharge+Bill))
