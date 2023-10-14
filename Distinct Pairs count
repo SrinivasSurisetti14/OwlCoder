@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+int Dist_Pair(int ar[],int n){
+    set<pair<int,int>>s;
+    for(int i =0;i<n;i++) {
+        for(int j =0;j<n;j++) {
+            s.insert(make_pair(ar[i],ar[j]));
+        }
+    }
+    return s.size();
+}
+int main() {
+    int n;
+    cin>>n;
+    int ar[n];
+    for (int i =0;i<n;i++) {
+        cin>>ar[i];
+    }
+    cout<<Dist_Pair(ar,n);
+}
