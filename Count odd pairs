@@ -1,0 +1,10 @@
+n = int(input())
+
+# Calculate the count of odd and even numbers
+odd_count = (n + 1) // 2
+even_count = n // 2
+
+# Calculate the total count of odd pairs
+total_odd_pairs = odd_count * even_count
+
+print(total_odd_pairs*2)
