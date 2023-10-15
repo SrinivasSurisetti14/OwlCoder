@@ -1,0 +1,13 @@
+n,rang=map(int,input().split())
+s=input()
+count_1=0
+count_0=0
+for i in s:
+    if i=='1':
+        count_1+=1
+    else:
+        count_0+=1
+if (count_1*rang)<=(count_0)or n<rang:
+    print(0)
+else:
+    print(1)
