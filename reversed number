@@ -1,0 +1,4 @@
+n=int(input())
+sign = 1 if n>=0 else -1
+rev_num = int(str(abs(n))[::-1]) * sign
+print(rev_num)
