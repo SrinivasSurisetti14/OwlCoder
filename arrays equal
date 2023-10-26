@@ -1,0 +1,14 @@
+____Arrays equal___(MUST)
+
+from collections import Counter
+
+n = int(input())
+
+# Read array A
+arr_a = list(map(int, input().split()))
+
+# Read array B
+arr_b = list(map(int, input().split()))
+
+# Check if the counts are equal
+print(1 if Counter(arr_a) == Counter(arr_b) else 0)
